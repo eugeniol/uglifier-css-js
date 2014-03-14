@@ -38,7 +38,7 @@ class JsMinifyResourceMapper implements GrailsApplicationAware {
 
 
         if (log.debugEnabled) {
-            log.debug "JS Minifier disabled in Config.groovy"
+            log.debug "JS Minifier"
             log.debug "--> "  + original
             log.debug "<-- "  + target
         }

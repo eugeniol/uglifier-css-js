@@ -23,7 +23,7 @@ class CssMinifyResourceMapper {
 
 
         if (log.debugEnabled) {
-            log.debug "CSS Minifier disabled in Config.groovy"
+            log.debug "CSS Minifier"
             log.debug "--> "  + original
             log.debug "<-- "  + target
         }
