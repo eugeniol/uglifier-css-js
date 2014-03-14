@@ -29,3 +29,5 @@ log4j = {
 //grails.resources.mappers.cssminify.excludes = ['**/*.min.css']
 //grails.resources.mappers.jsminify.includes = ['**/*.js']
 //grails.resources.mappers.jsminify.excludes = ['**/*.min.js']
+//grails.resources.mappers.uglifyjs.forceBundleMinification = true
+//grails.resources.mappers.uglifyjs.noMunge = true
