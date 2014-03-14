@@ -20,5 +20,12 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 
+    debug "JsMinifyResourceMapper", "CssMinifyResourceMapper"
     warn   'org.mortbay.log'
 }
+
+
+//grails.resources.mappers.cssminify.includes = ['**/*.css']
+//grails.resources.mappers.cssminify.excludes = ['**/*.min.css']
+//grails.resources.mappers.jsminify.includes = ['**/*.js']
+//grails.resources.mappers.jsminify.excludes = ['**/*.min.js']

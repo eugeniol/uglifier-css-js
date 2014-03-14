@@ -12,7 +12,7 @@ class CssMinifyResourceMapper {
     def map(resource, config) {
 
         if (config?.disable) {
-            if (log.debugEnabled) log.debug "YUI CSS Minifier disabled in Config.groovy"
+            if (log.debugEnabled) log.debug "CSS Minifier disabled in Config.groovy"
             return false
         }
 
@@ -22,9 +22,12 @@ class CssMinifyResourceMapper {
         File target = new File(original.absolutePath.replaceAll(/\.css$/, ".min.css").toString())
 
 
-        println "Css"
-        println "--> "  + original
-        println "<-- "  + target
+        if (log.debugEnabled) {
+            log.debug "CSS Minifier disabled in Config.groovy"
+            log.debug "--> "  + original
+            log.debug "<-- "  + target
+        }
+
 
 
         if (!target) return false

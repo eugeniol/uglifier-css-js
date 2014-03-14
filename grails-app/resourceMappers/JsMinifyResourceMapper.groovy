@@ -23,7 +23,7 @@ class JsMinifyResourceMapper implements GrailsApplicationAware {
     def map(resource, config) {
         if (config?.disable) {
             if (log.debugEnabled)
-                log.debug "Uglify JS Minifier disabled in Config.groovy"
+                log.debug "JS Minifier disabled in Config.groovy"
             return false
         }
 
@@ -36,9 +36,13 @@ class JsMinifyResourceMapper implements GrailsApplicationAware {
         File original = resource.processedFile
         File target = new File(original.absolutePath.replaceAll(/(?i)\.js$/, ".min.js"))
 
-        println "Js"
-        println "--> "  + original
-        println "<-- "  + target
+
+        if (log.debugEnabled) {
+            log.debug "JS Minifier disabled in Config.groovy"
+            log.debug "--> "  + original
+            log.debug "<-- "  + target
+        }
+
 
 
         try {
