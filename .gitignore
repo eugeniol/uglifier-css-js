@@ -1,0 +1,9 @@
+*.log
+/target
+*.zip
+*.zip.sha1
+plugin.xml
+.settings
+web-app
+*.iml
+.idea
