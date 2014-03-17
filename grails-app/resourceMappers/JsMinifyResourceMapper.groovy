@@ -1,5 +1,3 @@
-
-
 import groovy.time.TimeCategory
 import org.apache.commons.logging.LogFactory
 import org.codehaus.groovy.grails.commons.GrailsApplication
@@ -36,14 +34,11 @@ class JsMinifyResourceMapper implements GrailsApplicationAware {
         File original = resource.processedFile
         File target = new File(original.absolutePath.replaceAll(/(?i)\.js$/, ".min.js"))
 
-
         if (log.debugEnabled) {
             log.debug "JS Minifier"
-            log.debug "--> "  + original
-            log.debug "<-- "  + target
+            log.debug "--> $original"
+            log.debug "<-- $target"
         }
-
-
 
         try {
             Date start = new Date()
@@ -69,6 +64,5 @@ class JsMinifyResourceMapper implements GrailsApplicationAware {
             }
             e.printStackTrace()
         }
-
     }
 }

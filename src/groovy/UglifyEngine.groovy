@@ -1,5 +1,3 @@
-
-
 import org.springframework.core.io.ClassPathResource
 import org.mozilla.javascript.Context
 import org.mozilla.javascript.Scriptable
